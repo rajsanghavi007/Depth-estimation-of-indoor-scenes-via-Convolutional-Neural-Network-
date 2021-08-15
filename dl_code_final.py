@@ -77,8 +77,8 @@ def _parse_function(filename, label):
 # Create DataSet with Augmentation
 ######################
 # Define data import functionality
-train_path = "D:/kjumi/DL_project/subset/"
-train_csv = open(r"D:\kjumi\DL_project\subset\data\nyu2_train.csv", 'r').read()
+train_path = "D:/raj/DL_project/subset/"
+train_csv = open(r"D:\raj\DL_project\subset\data\nyu2_train.csv", 'r').read()
 nyu2_train = list((row.split(',') for row in (train_csv).split('\n') if len(row) > 0))
 nyu2_train = shuffle(nyu2_train, random_state=0)
 
